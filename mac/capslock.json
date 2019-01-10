@@ -7,11 +7,11 @@
   "import_url": "karabiner://karabiner/assets/complex_modifications/import?url=https://raw.githubusercontent.com/Vonng/Capslock/master/mac/capslock.json",
   "rules": [
     {
-      "description": "CapsLock to Hyper/Escape",
+      "description": "F16 to Hyper/F16(single)",
       "manipulators": [
         {
           "from": {
-            "key_code": "caps_lock",
+            "key_code": "f16",
             "modifiers": {
               "optional": [
                 "any"
@@ -30,7 +30,7 @@
           ],
           "to_if_alone": [
             {
-              "key_code": "escape"
+              "key_code": "f16"
             }
           ],
           "type": "basic"
@@ -1413,7 +1413,7 @@
           },
           "to": [
             {
-              "shell_command": "open -a 'Dash'"
+              "shell_command": "open -a 'Firefox'"
             }
           ],
           "type": "basic"
@@ -1476,7 +1476,7 @@
           },
           "to": [
             {
-              "key_code": "display_brightness_decrement"
+              "key_code": "mute"
             }
           ],
           "type": "basic"
@@ -1495,7 +1495,7 @@
           },
           "to": [
             {
-              "key_code": "display_brightness_increment"
+              "key_code": "volume_decrement"
             }
           ],
           "type": "basic"
@@ -1514,10 +1514,7 @@
           },
           "to": [
             {
-              "key_code": "up_arrow",
-              "modifiers": [
-                "left_control"
-              ]
+              "key_code": "volume_increment"
             }
           ],
           "type": "basic"
@@ -1536,7 +1533,7 @@
           },
           "to": [
             {
-              "shell_command": "open -a 'Launchpad'"
+              "key_code": "rewind"
             }
           ],
           "type": "basic"
@@ -1555,7 +1552,7 @@
           },
           "to": [
             {
-              "key_code": "illumination_decrement"
+              "key_code": "play_or_pause"
             }
           ],
           "type": "basic"
@@ -1574,45 +1571,7 @@
           },
           "to": [
             {
-              "key_code": "illumination_increment"
-            }
-          ],
-          "type": "basic"
-        },
-        {
-          "from": {
-            "key_code": "f7",
-            "modifiers": {
-              "mandatory": [
-                "right_command",
-                "right_control",
-                "right_shift",
-                "right_option"
-              ]
-            }
-          },
-          "to": [
-            {
-              "key_code": "rewind"
-            }
-          ],
-          "type": "basic"
-        },
-        {
-          "from": {
-            "key_code": "f8",
-            "modifiers": {
-              "mandatory": [
-                "right_command",
-                "right_control",
-                "right_shift",
-                "right_option"
-              ]
-            }
-          },
-          "to": [
-            {
-              "key_code": "play_or_pause"
+              "key_code": "fastforward"
             }
           ],
           "type": "basic"
@@ -1631,26 +1590,12 @@
           },
           "to": [
             {
-              "key_code": "fastforward"
-            }
-          ],
-          "type": "basic"
-        },
-        {
-          "from": {
-            "key_code": "f10",
-            "modifiers": {
-              "mandatory": [
-                "right_command",
-                "right_control",
-                "right_shift",
-                "right_option"
+              "key_code": "spacebar",
+              "modifiers": [
+                "left_control",
+                "left_option",
+                "left_command"
               ]
-            }
-          },
-          "to": [
-            {
-              "key_code": "mute"
             }
           ],
           "type": "basic"
@@ -1669,7 +1614,7 @@
           },
           "to": [
             {
-              "key_code": "volume_decrement"
+              "key_code": "display_brightness_decrement"
             }
           ],
           "type": "basic"
@@ -1688,202 +1633,7 @@
           },
           "to": [
             {
-              "key_code": "volume_increment"
-            }
-          ],
-          "type": "basic"
-        },
-        {
-          "from": {
-            "key_code": "f13",
-            "modifiers": {
-              "mandatory": [
-                "right_command",
-                "right_control",
-                "right_shift",
-                "right_option"
-              ]
-            }
-          },
-          "to": [
-            {
-              "key_code": "rewind"
-            }
-          ],
-          "type": "basic"
-        },
-        {
-          "from": {
-            "key_code": "f14",
-            "modifiers": {
-              "mandatory": [
-                "right_command",
-                "right_control",
-                "right_shift",
-                "right_option"
-              ]
-            }
-          },
-          "to": [
-            {
-              "key_code": "fastforward"
-            }
-          ],
-          "type": "basic"
-        },
-        {
-          "from": {
-            "key_code": "f15",
-            "modifiers": {
-              "mandatory": [
-                "right_command",
-                "right_control",
-                "right_shift",
-                "right_option"
-              ]
-            }
-          },
-          "to": [
-            {
-              "key_code": "mute"
-            }
-          ],
-          "type": "basic"
-        },
-        {
-          "from": {
-            "key_code": "insert",
-            "modifiers": {
-              "mandatory": [
-                "right_command",
-                "right_control",
-                "right_shift",
-                "right_option"
-              ]
-            }
-          },
-          "to": [
-            {
-              "key_code": "display_brightness_increment",
-              "modifiers": [
-                "left_shift",
-                "left_option"
-              ]
-            }
-          ],
-          "type": "basic"
-        },
-        {
-          "from": {
-            "key_code": "delete_forward",
-            "modifiers": {
-              "mandatory": [
-                "right_command",
-                "right_control",
-                "right_shift",
-                "right_option"
-              ]
-            }
-          },
-          "to": [
-            {
-              "key_code": "display_brightness_decrement",
-              "modifiers": [
-                "left_shift",
-                "left_option"
-              ]
-            }
-          ],
-          "type": "basic"
-        },
-        {
-          "from": {
-            "key_code": "home",
-            "modifiers": {
-              "mandatory": [
-                "right_command",
-                "right_control",
-                "right_shift",
-                "right_option"
-              ]
-            }
-          },
-          "to": [
-            {
-              "key_code": "illumination_increment",
-              "modifiers": [
-                "left_shift",
-                "left_option"
-              ]
-            }
-          ],
-          "type": "basic"
-        },
-        {
-          "from": {
-            "key_code": "end",
-            "modifiers": {
-              "mandatory": [
-                "right_command",
-                "right_control",
-                "right_shift",
-                "right_option"
-              ]
-            }
-          },
-          "to": [
-            {
-              "key_code": "illumination_decrement",
-              "modifiers": [
-                "left_shift",
-                "left_option"
-              ]
-            }
-          ],
-          "type": "basic"
-        },
-        {
-          "from": {
-            "key_code": "page_down",
-            "modifiers": {
-              "mandatory": [
-                "right_command",
-                "right_control",
-                "right_shift",
-                "right_option"
-              ]
-            }
-          },
-          "to": [
-            {
-              "key_code": "volume_decrement",
-              "modifiers": [
-                "left_shift",
-                "left_option"
-              ]
-            }
-          ],
-          "type": "basic"
-        },
-        {
-          "from": {
-            "key_code": "page_up",
-            "modifiers": {
-              "mandatory": [
-                "right_command",
-                "right_control",
-                "right_shift",
-                "right_option"
-              ]
-            }
-          },
-          "to": [
-            {
-              "key_code": "volume_increment",
-              "modifiers": [
-                "left_shift",
-                "left_option"
-              ]
+              "key_code": "display_brightness_increment"
             }
           ],
           "type": "basic"
